@@ -22,7 +22,7 @@
 " }}}
 
 augroup filetypedetect
-autocmd! BufRead,BufNewFile *.jinja,*jinja2,*.j2 call <SID>extension(expand('<afile>'))
+autocmd! BufRead,BufNewFile *.jinja,*jinja2,*.j2,*.nwt,*.nimja call <SID>extension(expand('<afile>'))
 augroup END
 
 " Detect a normal or compound file extension (like 'foo.html.jinja')
